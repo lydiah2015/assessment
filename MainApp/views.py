@@ -7,11 +7,11 @@ def index(request):
 
 
 
-    url = 'https://newsapi.org/v2/everything?q=tesla&from=2022-05-28&sortBy=publishedAt&apiKey=44b10db924834a118afd2a0118363190'
+    url = 'https://newsapi.org/v2/everything?q=apple&from=2022-06-28&to=2022-06-28&sortBy=popularity&apiKey=44b10db924834a118afd2a0118363190'
 
-    crypto_news = requests.get(url).json()
+    apple = requests.get(url).json()
 
-    a = crypto_news['articles']
+    a = apple  ['articles']
     desc =[]
     title =[]
     img =[]
